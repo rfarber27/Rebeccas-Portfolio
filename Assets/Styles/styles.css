@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #F8DBDB;
+    color: #12175D;
+    font-size: 18px;
+    font-family: "Jost";
+    width: 60%;
+    margin: auto;
+    
+}
+
+h1{
+    color:#12175D;
+    font-size: 25px;
+    font-family: "Jost";
+    padding-top: 1em;
+    padding-bottom: .75em
+}
+
+a{
+    color: #264414;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover{
+    color:aliceblue
+}
