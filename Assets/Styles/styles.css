@@ -1,33 +1,149 @@
+/* General Styles */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-
 body {
-    background-color: #F8DBDB;
-    color: #12175D;
-    font-size: 18px;
-    font-family: "Jost";
-    width: 60%;
-    margin: auto;
-    
+    font-family: 'Courier New', monospace;
+    background-color: #fdfbf8;
+    color: #333;
+    padding: 1em;
 }
 
-h1{
-    color:#12175D;
-    font-size: 25px;
-    font-family: "Jost";
-    padding-top: 1em;
-    padding-bottom: .75em
+/* Header & Navigation */
+header {
+    background: url('images/torn-paper-bg.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
-
-a{
-    color: #264414;
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: #4a403a;
+    font-size: 2.5em;
+}
+nav {
+    margin-top: 1em;
+}
+nav a {
     text-decoration: none;
-    font-weight: 700;
+    color: #4a403a;
+    font-size: 1.2em;
+    margin: 0 1em;
+    padding: 5px;
+    background-color: #f5e9dc;
+    border: 2px dashed #4a403a;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+nav a:hover {
+    background-color: #e2d5c7;
+    transform: scale(1.05);
 }
 
-a:hover{
-    color:aliceblue
+/* Main Section Styling */
+main {
+    padding: 4em;
+    background-color: #fbf7f4;
+    border: 2px solid #d9c8b3;
+    border-radius: 12px;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.intro h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+    color: #4a403a;
+}
+.intro p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    padding: 20px
+}
+
+/* Scrapbook Elements */
+.section-wrapper {
+    padding: 2em;
+    border: 1px dashed #b89b83;
+    border-radius: 10px;
+    background-color: #f9f3ef;
+    margin-bottom: 1em;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+}
+.section-wrapper h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #4a403a;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.section-wrapper p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Graphic Design Page Elements */
+.design-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    margin-top: 1em;
+}
+.design-item {
+    background-color: #f4e3d7;
+    padding: 1em;
+    border: 1px dashed #b89b83;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.design-item:hover {
+    transform: translateY(-5px);
+    background-color: #f0d9c5;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+}
+
+header nav menu{
+    list-style: none;
+}
+
+header nav { 
+    display: flex; 
+    justify-content: space-around;
+}
+
+header nav menu#main-menu{
+    display: flex;
+    gap: 50px;
+}
+
+header nav menu.Dropdown {
+    display: none; 
+}
+
+header nav .dropdown-trigger:hover menu.Dropdown {
+    display: block;
+    position: absolute
+}
+
+nav button{
+    background-color: transparent;
+    font-family: 'Courier New', monospace;
+    background-color: #fdfbf8;
+    color: #333;
+    padding: 1em;
 }
