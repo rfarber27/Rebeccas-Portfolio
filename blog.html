@@ -1,69 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Assets/Styles/styles.css"
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vintages', sans-serif;
+                                               
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
 </head>
-    Blog
-    <header>
-        <nav>
-            <a class="logo" href="index.html"> Logo</a>
-            <menu id="main-menu"> 
-                <li>
-                    <a href=""> Link to Page </a>
-                </li>
-            <li class="dropdown-trigger">
-                <button> Dropdown Label </button>
-                <menu class="Dropdown"> 
-                    <li> 
-                        <a href="projects.html"> Projects </a>
-                    </li>
-                    <li> 
-                        <a href="contact.html"> Contact </a>
-                    </li>
-                    <li> 
-                        <a href="about.html"> About </a>
-                    </li>
-                
-
-            </li>  
-
-            </menu>
-           
-        </nav>
-    </header>
-    <main> 
-        <article>
-            <h1>Showcasing my Creative Journey!</h1>
-            <h2>Welcome to my personal portfolio website! This space is 
-                dedicated to showcasing my work across various fields, including 
-                event promotion, sports graphics, and photography. Each project
-                demonstrates my commitment to delivering dynamic, tailored solutions
-                for clients. 
-                <a href="projects.html"> Let's take a tour of what you'll discover!</a>
-            </h2>
-            <h3> <a href="index.html">BACK</a></h3>
-        </article>
-        <sections>
-            <h2>Subscribe to my Newsletter!</h2>
-            <form>
-                <label for="newsletter">Enter your email</label><br>
-                <input id="newsletter" type="email" placeholder="example@email.com"><br>
-                <button>Subscribe</button>
-            </form>
-        </sections>
-      
-        </section>
-    </main>
-    <footer>
-
-    </footer>
 <body>
-    
+
+<div class="header">
+  <h1>REBECCA FARBER</h1>
+  <p>GRAPHIC DESIGN    PHOTOGRAPHY    ART</p>
+</div>
+
+<div class="topnav">
+  <a href="#">ABOUT</a>
+  <a href="#">MY WORK</a>
+  <a href="#">CONTACT</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TCNJ College Union Board Fall Concert: Neon Trees</h2>
+      <h5>Promotional Graphics</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>About The Event Graphics: </p>
+      <p>As an executive graphic artist for the student organization, I was tasked with making a few graphics for the Instagram!</p>
+    </div>
+    <div class="card">
+      <h2>TCNJ Baseball</h2>
+      <h5>Reviving & Revamping Their Social Media Presence</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>A New Look and Feel</p>
+      <p>As the newly appointed Social Media manager for the TCNJ Baseball program I am working to adjust and bring alive their social medias.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
 </body>
 </html>
