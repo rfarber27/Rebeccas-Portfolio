@@ -15,19 +15,33 @@ body {
 
 /* Header/Blog Title */
 .header {
-  padding: 30px;
+  padding: 20px;
   text-align: center;
-  background: white;
+  background: #ffa5cb;
 }
 
 .header h1 {
-  font-size: 50px;
+  font-size: 60px;
+  color: #000000;
 }
+
+.paragraph p {
+  font-size: 30px;
+  color: #000000;
+}
+
+.row::after  {
+  font-size: 20px;
+  color: #f1f1f1;
+}
+
+
+
 
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #8fb67f;
 }
 
 /* Style the topnav links */
@@ -70,7 +84,7 @@ body {
 
 /* Add a card effect for articles */
 .card {
-  background-color: white;
+  background-color: #f6dbe7;
   padding: 20px;
   margin-top: 20px;
 }
@@ -86,7 +100,7 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #8fb67f;
   margin-top: 20px;
 }
 
@@ -110,56 +124,61 @@ body {
 <body>
 
 <div class="header">
-  <h1>REBECCA FARBER</h1>
-  <p>GRAPHIC DESIGN    PHOTOGRAPHY    ART</p>
+  <h1>Contact me!</h1>
+  <div class="paragraph">
+    <p>Interest in purchasing my work? Need some custom branding done? Maybe a personalized logo for your company? Look no further! Enter your information and request below!</p> 
+  </div>
+  
+  
+  
 </div>
 
 <div class="topnav">
-  <a href="#">ABOUT</a>
-  <a href="#">MY WORK</a>
-  <a href="#">CONTACT</a>
-  <a href="#" style="float:right">Link</a>
+  <a href="about.html"button> MAIN PAGE </button></a> 
+  <a href="blog.html">MY WORK</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="index.html" style="float:right">HOME</a>
 </div>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>TCNJ College Union Board Fall Concert: Neon Trees</h2>
-      <h5>Promotional Graphics</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>About The Event Graphics: </p>
-      <p>As an executive graphic artist for the student organization, I was tasked with making a few graphics for the Instagram!</p>
+
+    <h3>Contact Form</h3>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
     </div>
-    <div class="card">
-      <h2>TCNJ Baseball</h2>
-      <h5>Reviving & Revamping Their Social Media Presence</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>A New Look and Feel</p>
-      <p>As the newly appointed Social Media manager for the TCNJ Baseball program I am working to adjust and bring alive their social medias.</p>
-    </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
-    </div>
-  </div>
+    
+    </body>
+    
 </div>
 
 <div class="footer">
-  <h2>Footer</h2>
+  <h2> 
+     <img src="Assets/Images/INSTA.png" height="50" alt="My Image">      <img src="Assets/Images/PIN.png" height="50" alt="My Image">      <img src="Assets/Images/FB.png" height="50" alt="My Image">      <img src="Assets/Images/X.png" height="50" alt="My Image">
+
+
+
+  </h2>
 </div>
 
 </body>
 </html>
+
+
